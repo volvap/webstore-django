@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  {{order.item}}
+  {{order.item.price}}
+  {{order.item.basic_info}}
+  <img src="{{ order.item.upload.url }}" alt="" style="
+    width:300px;
+    height:300px;
+    padding: 0 2%;
+    border-radius:60px;
+  ">
+
+<button type="button" name="button"><a href="/delete">Delete all objects</a></button>
+<button type="button" name="button"><a href="#">Purchase</a></button>
+
+
+{% endblock%}

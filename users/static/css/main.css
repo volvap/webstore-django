@@ -1,0 +1,298 @@
+body {
+  background-color: #F0F8FF;
+}
+
+body, #slider, .wrapper .slide-content {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.main-container {
+    background-color: #2c3039;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bitter', serif;
+  font-size: 350%;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-info p {
+  padding: 7%;
+  font-size: 170%;
+}
+
+.main-info img {
+  width: 30%;
+  height: 30%;
+  padding: 5%;
+  border-radius: 130px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: black;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.logo-header {
+  font-size: 20px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("/static/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg")
+}
+
+.slide2 {
+  background-image: url("/static/images/patrick-ward-z_dLXnQg0JY-unsplash.jpg")
+}
+
+.slide3 {
+  background-image: url("/static/images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg")
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #f1f1f1;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent white transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 40px 30px 40px;
+  border-color: transparent transparent transparent white;
+  right: 0;
+  margin-left: 30px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60vh 20%;
+}
+
+.price-content {
+  display: flex;
+  align-items:center;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-item {
+  padding: 5%;
+}
+
+.discover-logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 300%;
+}
+
+.discover-content {
+  background-color: #2e2e2e;
+}
+
+.about-content {
+  padding: 60px;
+}
+
+.about-logo h1 {
+  font-size: 700%;
+  text-align: center;
+  font-weight: 1400;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.text-content {
+  text-align: center;
+  font-size: 500%;
+}
+
+.community-content {
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.community-content p {
+  font-size: 35px;
+  padding: 90px;
+}
+
+.join-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.join-content p {
+  font-size: 50px;
+}
+
+/*Contacts*/
+
+.contacts-content {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-content h1 {
+  transform: rotate(20deg);
+  font-size: 300px;
+}
+
+.location-content p {
+  font-size: 70px;
+  padding: 110px;
+}
+
+.shop-logo {
+  text-align: center;
+}
+
+/* log reg forms*/
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 60px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #18181a;
+}
+
+.inner-footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100px;
+}
+
+.inner-footer .logo-container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.inner-footer .logo-container i {
+  width: 65px;
+  height: auto;
+}
+
+.inner-footer .footer-third {
+  width: 20%;
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.inner-footer .footer-third:last-child {
+  margin-right: 0;
+}
+
+.inner-footer .footer-third h1 {
+  font-family: 'arial';
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner-footer .footer-third a {
+    font-family: 'arial';
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }

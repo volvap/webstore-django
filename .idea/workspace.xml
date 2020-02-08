@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aef9d436-44fb-4f3e-b0f4-86565ced893f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WhiZKHNBA5mI8ZzQhCA4NHbR0U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="temp_site" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aef9d436-44fb-4f3e-b0f4-86565ced893f" name="Default Changelist" comment="" />
+      <created>1579608281436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579608281436</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="669" y="223" width="642" height="667" key="#Unnamed" timestamp="1581185393147">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="669" y="223" width="642" height="667" key="#Unnamed/70.27.1850.1053@70.27.1850.1053" timestamp="1581185393147" />
+    <state x="70" y="211" width="1084" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581185475378">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="70" y="211" width="1084" height="726" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1581185475378" />
+    <state x="349" y="299" width="515" height="556" key="EnvironmentVariablesDialog" timestamp="1581185474351">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="349" y="299" width="515" height="556" key="EnvironmentVariablesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1581185474351" />
+    <state x="651" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581185384277">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="651" y="380" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1581185384277" />
+  </component>
+</project>

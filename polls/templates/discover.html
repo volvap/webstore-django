@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="discover-content">
+  <div class="discover-logo">
+    <h1> Proudly designed for everyday living.</h1>
+    <img src="{% static 'images/adin.png'%}" alt="" style="width:1540px; height:810px;">
+  </div>
+  <div class="discover-button">
+    <form>
+        <button><a href="/main"> Discover </a></button>
+    </form>
+    <br>
+  </div>
+</div>
+
+{% endblock %}

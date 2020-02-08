@@ -1,0 +1,29 @@
+{% extends  'index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="about-content">
+  <div class="about-logo">
+    <h1>ABOUT</h1>
+  </div>
+  <div class="text-content">
+    <p>Proudly designed for everyday living</p>
+  </div>
+  <div class="community-content">
+    <p>01 — Our Mission
+      Kvell was born from the desire to make contemporary and
+      functional design attainable to everyone. We believe your
+      home should make you proud whether enjoyed alone, or with company.
+      Meaningful design is not only how something looks
+      but how you connect with it in everyday living.
+    </p>
+    <img src="{% static 'images/of.jpg' %}" alt="" style="width:534px;height:357px;">
+  </div>
+  <div class="join-content">
+    <p>Want to join us?</p>
+  </div>
+</div>
+
+{% endblock %}

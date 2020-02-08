@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load recaptcha3 %}
+
+{% block content %}
+
+<form class="form-group" method="POST">
+    <div class="register-form">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button type="submit" name="btn btn-success">Register</button>
+    </div>
+</form>
+
+
+{% endblock %}
