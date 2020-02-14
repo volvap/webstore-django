@@ -7,7 +7,6 @@ from snowpenguin.django.recaptcha3.fields import ReCaptchaField
 
 class RegisterForm(UserCreationForm):
     email = forms.EmailField()
-    captcha = ReCaptchaField()
 
     class Meta:
         model = User

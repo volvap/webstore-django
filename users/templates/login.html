@@ -1,14 +1,22 @@
 {% extends 'index.html' %}
 
+{% load static %}
+
 {% block title %}
 Login here
 {% endblock %}
 
 {% block content %}
 <form class="from-group" method="post">
-  {% csrf_token %}
-  {{form}}
-  <button type="submit" class="btn btn-success">Login</button>
+  <div class="login-content">
+      <img src="{% static 'images/123.jpg' %}" alt="" style="width:450px; height:490px;">
+    {% csrf_token %}
+    <div class="login-content-form">
+      {{form}}
+      <button type="submit" class="btn btn-success">Sign In</button>
+      <p>Dont have an account?<a href="/register"> Sign up</a> </p>
+    </div>
+  </div>
 </form>
 
 {% endblock %}

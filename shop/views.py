@@ -12,7 +12,7 @@ def item_list(request):
     return render(request, "item_list.html", context)
 
 
-@login_required(login_url='/register')
+@login_required(login_url='/log')
 def add_to_cart(request,pk):
     item = get_object_or_404(Item, pk=pk)
     order_item = OrderItem.objects.create(item=item)
@@ -39,7 +39,7 @@ def delete_all_from_cart(request):
     return render(request, "item_list.html", context)
 
 
-@login_required(login_url='/register')
+@login_required(login_url='/log')
 def display_cart(request):
     order = Order.objects.filter(user=request.user).latest('ordered_date')
     context = {

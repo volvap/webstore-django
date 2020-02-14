@@ -1,5 +1,5 @@
 body {
-  background-color: #F0F8FF;
+  background-color: white;
 }
 
 body, #slider, .wrapper .slide-content {
@@ -118,10 +118,71 @@ header a {
   margin-left: 30px;
 }
 
+.register-content {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .register-form {
     display: flex;
     flex-direction: column;
-    margin: 0 60vh 20%;
+    padding-top: 110px;
+}
+
+.register-form label {
+  text-align: center;
+}
+
+
+.login-content {
+  display: flex;
+  flex-direction: row;
+  padding: 200px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 20px;
+  margin: 100px;
+}
+
+.login-content img{
+  border-radius: 20px;
+}
+
+.login-content-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.login-content-form label {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-content-form input {
+  padding: 5px;
+  background-color: #d7dadc;
+  color: black;
+  border-radius: 9px;
+  height: 35px;
+}
+
+.login-content-form button {
+  width: 400px;
+  margin-top: 55px;
+  height: 50px;
+}
+
+.login-content-form p {
+  text-align: center;
+}
+
+.login-content-form a {
+  text-decoration: none;
+  color: #3133a3;
 }
 
 .price-content {
@@ -221,13 +282,13 @@ form {
 }
 
 button {
-  background-color: black; /* Green */
+  background-color: #3133a3;
   border: none;
   color: white;
   padding: 10px 32px;
   text-align: center;
   font-size: 16px;
-  border-radius: 60px;
+  border-radius: 9px;
 }
 
 button a {

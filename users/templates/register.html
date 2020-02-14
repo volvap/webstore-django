@@ -1,15 +1,18 @@
 {% extends 'index.html' %}
-{% load recaptcha3 %}
+{% load static %}
 
 {% block content %}
 
-<form class="form-group" method="POST">
-    <div class="register-form">
-      {% csrf_token %}
-      {{form.as_p}}
-      <button type="submit" name="btn btn-success">Register</button>
-    </div>
-</form>
+  <form class="form-group" method="POST">
+      <div class="register-content">
+        <img src="{% static 'images/hello.png' %}" alt="">
+        {% csrf_token %}
+        <div class="register-form">
+          {{form.as_p}}
+          <button type="submit" name="btn btn-success">Register</button>
+        </div>
+      </div>
+  </form>
 
 
 {% endblock %}
