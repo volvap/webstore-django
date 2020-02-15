@@ -1,10 +1,15 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Item, OrderItem, Order
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.cache import cache_page
 
 from datetime import datetime
 
 
+CACHE_TTL = 60 * 15
+
+
+@cache_page(CACHE_TTL)
 def item_list(request):
     context = {
         'items': Item.objects.all()
