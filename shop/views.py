@@ -36,7 +36,7 @@ def delete_all_from_cart(request):
     context = {
         'items': Item.objects.all()
     }
-    return render(request, "item_list.html", context)
+    return render(request, "cart.html", context)
 
 
 @login_required(login_url='/log')

@@ -272,6 +272,7 @@ header a {
 
 .shop-logo {
   text-align: center;
+  font-size: 40px;
 }
 
 /* log reg forms*/
@@ -282,7 +283,7 @@ form {
 }
 
 button {
-  background-color: #3133a3;
+  background-color: black;
   border: none;
   color: white;
   padding: 10px 32px;
@@ -295,6 +296,13 @@ button a {
   text-decoration: none;
   color: white;
   font-size: 40px;
+}
+
+/*Cart*/
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer */

@@ -4,10 +4,30 @@
 
 {% block content %}
 
-{% for order_item in order_items.all %}
+{% if order_items.exists %}
 
-{{ order_item.item.title }}
+{% for order_item in order_items.all %}
+<div class="cart-content">
+  <img src="{{ order_item.item.upload.url }}" alt="" style="
+    width:300px;
+    height:300px;
+    padding: 0 2%;
+    border-radius:60px;
+  ">
+  {{ order_item.item.title }}
+  {{ order_item.item.basic_info }}
+  {{ order_item.item.price }}
+</div>
 
 {% endfor%}
+
+<button type="button" name="button"><a href="/delete">Delete all purchases</a></button>
+<button type="button" name="button"><a href="#">Purchase</a></button>
+
+{% else %}
+
+<h1> Your cart empty, try <a href="/shop" style="text-decoration: none; color: green;">shop</a></h1>
+
+{% endif %}
 
 {% endblock%}
