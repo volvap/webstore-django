@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-image: url("/static/images/fon.jpg");
 }
 
 body, #slider, .wrapper .slide-content {
@@ -46,7 +46,7 @@ header {
   align-items:center;
   justify-content: space-around;
   height: 80px;
-  background-color: black;
+
 }
 
 header a {
@@ -59,6 +59,7 @@ header a {
   font-size: 20px;
 }
 
+/* Slider */
 .wrapper {
   position: relative;
 }
@@ -118,18 +119,32 @@ header a {
   margin-left: 30px;
 }
 
+/* Registration */
+
 .register-content {
   display: flex;
   justify-content: center;
   background-color: white;
   padding: 0px;
   box-sizing: border-box;
+  height: 650px;
+  width: 1000px;
+  border-radius: 20px;
 }
 
 .register-form {
     display: flex;
     flex-direction: column;
     padding-top: 110px;
+    padding-right: 190px;
+}
+
+.register-form ul {
+  display: none;
+}
+
+.register-form .helptext {
+  display: none;
 }
 
 .register-form label {
@@ -185,36 +200,76 @@ header a {
   color: #3133a3;
 }
 
+/*Shop*/
+
 .price-content {
-  display: flex;
-  align-items:center;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+.item-title-content {
+  text-align: center;
+  font-size: 30px;
+}
+
+.order a{
+  text-decoration:none;
+  color: white;
+  border: solid;
+  padding: 5px;
 }
 
 .order {
-  display: flex;
-  align-items: center;
+  text-align: center;
+}
+
+.info-content {
+  width: 300px;
+  padding: 5px;
 }
 
 .item-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50%;
+    margin-left: 25%;
 }
+
 
 .single-item {
   padding: 5%;
+  margin-bottom: 110px;
+  background-color: #F08080;
+  color: white;
+  padding: 25px;
 }
+
+.single-item:hover {
+  transition: 0.5s;
+  background-color: #261ca3;
+}
+
+.shop-logo {
+  text-align: center;
+  font-size: 55px;
+  color: white;
+}
+
+.shop-logo span {
+  text-align: left;
+  color: blue;
+}
+
+/*Discover*/
 
 .discover-logo {
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 300%;
-}
-
-.discover-content {
-  background-color: #2e2e2e;
 }
 
 .about-content {
@@ -261,19 +316,18 @@ header a {
 }
 
 .contacts-content h1 {
-  transform: rotate(20deg);
-  font-size: 300px;
+  font-size: 200px;
+  color: white;
+  margin-left: 5%;
 }
 
 .location-content p {
   font-size: 70px;
   padding: 110px;
+  color: white;
 }
 
-.shop-logo {
-  text-align: center;
-  font-size: 40px;
-}
+
 
 /* log reg forms*/
 
@@ -305,6 +359,10 @@ button a {
   flex-direction: column;
 }
 
+.cart-empty-content {
+  text-align: center;
+}
+
 /* Footer */
 
 .footer {
@@ -313,7 +371,7 @@ button a {
   overflow: hidden;
   padding: 70px 0;
   box-sizing: border-box;
-  background-color: #18181a;
+
 }
 
 .inner-footer {

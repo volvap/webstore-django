@@ -9,7 +9,6 @@ from datetime import datetime
 CACHE_TTL = 60 * 20
 
 
-@cache_page(CACHE_TTL)
 def item_list(request):
     context = {
         'items': Item.objects.all()

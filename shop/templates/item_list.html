@@ -4,7 +4,8 @@
 
 {% block content %}
 <div class="shop-logo">
-  <h2> Pretty. Freaking Powerfull. </h2>
+  <h2> <span>Pretty.</span> </h2>
+  <h2> Freaking Powerfull.</h2>
 </div>
 <div class="item-content">
   {% for item in items %}
@@ -13,9 +14,11 @@
       <img src="{{ item.upload.url }}" alt="" style="
         width:300px;
         height:300px;
-        padding: 0 2%;
         border-radius:60px;
       ">
+      <div class="item-title-content">
+        {{item.title}}
+      </div>
       <div class="info-content">
         {{item.basic_info}}
       </div>
@@ -23,7 +26,7 @@
         <div class="price">
           {{item.price}}$
         </div>
-
+        <br>
       </div>
       <div class="order">
         <div class="order-btn">
