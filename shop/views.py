@@ -6,7 +6,7 @@ from django.views.decorators.cache import cache_page
 from datetime import datetime
 
 
-CACHE_TTL = 60 * 15
+CACHE_TTL = 60 * 20
 
 
 @cache_page(CACHE_TTL)

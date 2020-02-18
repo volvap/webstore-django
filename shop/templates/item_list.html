@@ -10,6 +10,12 @@
   {% for item in items %}
   <div class="one-item-content">
     <div class="single-item">
+      <img src="{{ item.upload.url }}" alt="" style="
+        width:300px;
+        height:300px;
+        padding: 0 2%;
+        border-radius:60px;
+      ">
       <div class="info-content">
         {{item.basic_info}}
       </div>
@@ -17,15 +23,9 @@
         <div class="price">
           {{item.price}}$
         </div>
-        <img src="{{ item.upload.url }}" alt="" style="
-          width:300px;
-          height:300px;
-          padding: 0 2%;
-          border-radius:60px;
-        ">
+
       </div>
       <div class="order">
-        <h3>123</h3>
         <div class="order-btn">
           <a href="/cart/{{item.pk}}">Add to Cart</a>
         </div>
