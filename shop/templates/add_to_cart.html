@@ -3,19 +3,37 @@
 {% load static %}
 
 {% block content %}
+<div class="add-cart-content">
+  <div class="add-cart-info">
+    <div class="add-cart-info-logo-purchase">
+      <p>Buy it now</p>
+    </div>
+    <div class="add-cart-info-text">
+      <h1>All the essentials. And then some.</h1>
+    </div>
+    <button type="button" name="button"><a href="/shop">Return to shop</a></button>
+    <button type="button" name="button"><a href="/cart">Go to cart</a></button>
+  </div>
+  <div class="add-cart-item-content">
+    <div class="add-cart-item-subinfo">
+      <h4>{{order.item.title}}</h4>
+      <p>{{order.item.price}} $</p>
+    </div>
 
-  {{order.item}}
-  {{order.item.price}}
-  {{order.item.basic_info}}
-  <img src="{{ order.item.upload.url }}" alt="" style="
-    width:300px;
-    height:300px;
-    padding: 0 2%;
-    border-radius:60px;
-  ">
+    <img src="{{ order.item.upload.url }}" alt="" style="
+      width:300px;
+      height:300px;
+      padding: 0 2%;
+      border-radius:60px;
+    ">
+    <div class="add-cart-item-basic-info">
+        {{order.item.basic_info}}
+    </div>
 
-<button type="button" name="button"><a href="/shop">Return to shop</a></button>
-<button type="button" name="button"><a href="/cart">Go to cart</a></button>
+
+
+  </div>
+</div>
 
 
 {% endblock%}

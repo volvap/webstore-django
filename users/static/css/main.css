@@ -119,6 +119,46 @@ header a {
   margin-left: 30px;
 }
 
+/* Adding item to cart */
+
+.add-cart-info-text {
+  font-size: 30px;
+}
+
+.add-cart-item-basic-info {
+  font-size: 20px;
+}
+
+.add-cart-info-logo-purchase {
+
+}
+
+.add-cart-content {
+  display: flex;
+  justify-content: center;
+
+}
+
+.add-cart-info {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+.add-cart-item-content {
+  background-color: white;
+  padding: 20px;
+}
+
+.add-cart-item-subinfo p {
+  text-align: right;
+}
+
+.add-cart-item-subinfo h4 {
+  text-align: left  ;
+}
+
+
 /* Registration */
 
 .register-content {
