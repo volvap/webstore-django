@@ -45,7 +45,7 @@ header {
   display: flex;
   align-items:center;
   justify-content: space-around;
-  height: 80px;
+  height: 190px;
 
 }
 
@@ -71,7 +71,7 @@ header a {
 }
 
 .slide1 {
-  background-image: url("/static/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg")
+  background-image: url("/static/images/01.png")
 }
 
 .slide2 {
@@ -150,11 +150,16 @@ header a {
   padding: 20px;
 }
 
+.add-cart-item-subinfo {
+  display: flex;
+  justify-content: space-around;
+}
+
 .add-cart-item-subinfo p {
   text-align: right;
 }
 
-.add-cart-item-subinfo h4 {
+.add-cart-item-subinfo p span {
   text-align: left  ;
 }
 
@@ -310,7 +315,28 @@ header a {
   align-items: center;
   text-align: center;
   font-size: 300%;
+  color: white;
 }
+
+.discover-content {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 1300px;
+  margin-left: 16%;
+}
+
+.discover-earpods-content {
+  display: flex;
+  justify-content: center;
+}
+
+.discover-keyboard-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* About */
 
 .about-content {
   padding: 60px;
