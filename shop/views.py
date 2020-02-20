@@ -9,6 +9,7 @@ from datetime import datetime
 CACHE_TTL = 60 * 20
 
 
+@cache_page(CACHE_TTL)
 def item_list(request):
     context = {
         'items': Item.objects.all()
@@ -45,8 +46,12 @@ def delete_all_from_cart(request):
 
 @login_required(login_url='/log')
 def display_cart(request):
-    order = Order.objects.filter(user=request.user).latest('ordered_date')
+    num = Order.objects.filter(user=request.user).count()
+    if num == 0:
+        order = Order.objects.all()
+    else:
+        order = Order.objects.filter(user=request.user).latest('ordered_date')
     context = {
-        'order_items': order.items
+        'order_items': order
     }
     return render(request, "cart.html", context)

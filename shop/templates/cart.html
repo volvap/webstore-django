@@ -4,9 +4,9 @@
 
 {% block content %}
 
-{% if order_items.exists %}
+{% if order_items.items.exists %}
 
-{% for order_item in order_items.all %}
+{% for order_item in order_items.items.all %}
 <div class="cart-content">
   <img src="{{ order_item.item.upload.url }}" alt="" style="
     width:300px;
