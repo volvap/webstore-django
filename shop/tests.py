@@ -8,7 +8,7 @@ class ItemTestCase(TestCase):
         item = Item()
         item.title = "New title"
         item.price = 12.3
-        item.basic_info
+        item.basic_info = "asd"
         item.save()
 
         record = Item.objects.get(pk=1)

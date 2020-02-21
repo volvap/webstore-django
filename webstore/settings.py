@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+from decouple import config
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -22,7 +24,7 @@ MEDIA_URL = '/media/'
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@bz#x+n2lq@&5$(m%##0m!#*x(pxu&!25$t4l_zh!s5q0i=#49'
+SECRET_KEY = config('SECRET_KEY')
 RECAPTCHA_PRIVATE_KEY = '6Le8TNYUAAAAAJPRCIkV_7ZeR91b-QNgXL0was1j'
 RECAPTCHA_PUBLIC_KEY = '6Le8TNYUAAAAAHiAxUy639FyKaRNr5iHjzEA1lJ7'
 RECAPTCHA_DEFAULT_ACTION = 'generic'
@@ -87,11 +89,11 @@ WSGI_APPLICATION = 'webstore.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config("DB_PASSWORD"),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT')
     }
 }
 

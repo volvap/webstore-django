@@ -1,5 +1,6 @@
 body {
   background-image: url("/static/images/fon.jpg");
+
 }
 
 body, #slider, .wrapper .slide-content {
@@ -45,7 +46,8 @@ header {
   display: flex;
   align-items:center;
   justify-content: space-around;
-  height: 190px;
+  height: 100px;
+
 
 }
 
@@ -321,7 +323,8 @@ header a {
 .discover-content {
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: #7FDBFF;
+  opacity: 0.8;
   width: 1300px;
   margin-left: 16%;
 }
