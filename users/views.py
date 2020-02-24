@@ -9,7 +9,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('/main')
+            return redirect('/shop')
     else:
         form = RegisterForm()
 
@@ -29,7 +29,7 @@ def my_view(request):
 
         if user is not None:
             login(request,user)
-            return redirect('/main')
+            return redirect('/shop')
         else:
             return redirect('/log')
     else:
