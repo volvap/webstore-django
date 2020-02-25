@@ -1,5 +1,6 @@
 body {
   background-image: url("/static/images/fon.jpg");
+  background-position: center;
 
 }
 
@@ -94,7 +95,7 @@ header a {
 
 .slide-content span {
   font-size: 5rem;
-  color: white;
+  color: #261ca3;
 }
 
 .arrow {
@@ -315,6 +316,7 @@ header a {
 .discover-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 300%;
   color: white;
@@ -323,6 +325,8 @@ header a {
 .discover-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #7FDBFF;
   opacity: 0.8;
   width: 1300px;
@@ -455,7 +459,9 @@ button a {
 
 .cart-content {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  justify-content: center;
+  color: white;
 }
 
 .cart-empty-content {

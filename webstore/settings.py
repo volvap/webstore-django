@@ -150,5 +150,3 @@ CACHES = {
         "KEY_PREFIX": "example"
     }
 }
-
-SESSION_EXPIRE_SECONDS = 3600
