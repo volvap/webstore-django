@@ -14,15 +14,22 @@
     padding: 0 2%;
     border-radius:60px;
   ">
-  {{ order_item.item.title }}
-  {{ order_item.item.basic_info }}
-  {{ order_item.item.price }}
+  <div class="cart-info">
+    {{ order_item.item.title }}
+    <br>
+    {{ order_item.item.basic_info }}
+    <br>
+    {{ order_item.item.price }}
+  </div>
+
 </div>
 
 {% endfor%}
+<div class="cart-buttons">
+  <button type="button" name="button"><a href="/delete">Delete all purchases</a></button>
+  <button type="button" name="button"><a href="#">Purchase</a></button>
+</div>
 
-<button type="button" name="button"><a href="/delete">Delete all purchases</a></button>
-<button type="button" name="button"><a href="#">Purchase</a></button>
 
 {% else %}
 <div class="cart-empty-content">

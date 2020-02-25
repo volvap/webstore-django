@@ -459,9 +459,19 @@ button a {
 
 .cart-content {
   display: flex;
-  flex-direction:column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
   color: white;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-info {
+
 }
 
 .cart-empty-content {
