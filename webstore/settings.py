@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'users',
     'polls',
     'snowpenguin.django.recaptcha3',
+    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -149,4 +150,9 @@ CACHES = {
         },
         "KEY_PREFIX": "example"
     }
+}
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
 }

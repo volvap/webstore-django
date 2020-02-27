@@ -74,15 +74,16 @@ header a {
 }
 
 .slide1 {
-  background-image: url("/static/images/999.jpg")
+  background-image: url("/static/images/97.png");
+
 }
 
 .slide2 {
-  background-image: url("/static/images/patrick-ward-z_dLXnQg0JY-unsplash.jpg")
+  background-image: url("/static/images/98.png")
 }
 
 .slide3 {
-  background-image: url("/static/images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg")
+  background-image: url("/static/images/99.png")
 }
 
 .slide-content {
@@ -139,6 +140,7 @@ header a {
 .add-cart-content {
   display: flex;
   justify-content: center;
+  height: 500px;
 
 }
 
@@ -171,20 +173,21 @@ header a {
 
 .register-content {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  padding: 200px;
   background-color: white;
   padding: 0px;
-  box-sizing: border-box;
-  height: 650px;
-  width: 1000px;
   border-radius: 20px;
+  margin: 100px;
 }
 
 .register-form {
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
-    padding-right: 190px;
+    align-items: center;
+    padding-top: 60px;
+    padding-right: 70px;
+    padding-left: 80px;
 }
 
 .register-form ul {
@@ -301,12 +304,14 @@ header a {
 }
 
 .shop-logo {
-  text-align: center;
+  padding-left: 450px;
+  text-align: left;
   font-size: 55px;
   color: white;
 }
 
 .shop-logo span {
+  font-size: 100px;
   text-align: left;
   color: blue;
 }
@@ -325,12 +330,12 @@ header a {
 .discover-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #7FDBFF;
+  background-color: blue;
   opacity: 0.8;
   width: 1300px;
-  margin-left: 16%;
+  margin-left: 14%;
+  margin-top: 80px;
+  padding: 10px;
 }
 
 .discover-earpods-content {
